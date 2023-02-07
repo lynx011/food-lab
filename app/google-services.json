@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "810465300162",
+    "project_id": "foodlab-afb02",
+    "storage_bucket": "foodlab-afb02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810465300162:android:c5e8658ba100cc2662755b",
+        "android_client_info": {
+          "package_name": "com.example.food_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810465300162-dltl0iarot8mtv2ln86ujmhge8pimokp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.food_test",
+            "certificate_hash": "129364512d7017595d0e74a9d8f6eb2fe4a1e5df"
+          }
+        },
+        {
+          "client_id": "810465300162-2ef90l0kivc5l9bhq6fr5sgjreoplepe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfPm4W8B-XwxFBzjgvAkVU0KlNukTtQWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810465300162-2ef90l0kivc5l9bhq6fr5sgjreoplepe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

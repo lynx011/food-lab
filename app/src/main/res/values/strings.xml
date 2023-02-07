@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoodLab</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1417760229019941</string>
+    <string name="fb_login_protocol_scheme">fb1417760229019941</string>
+    <string name="facebook_client_token">92880a72cb9a8d94a5f50b95f40b17c6</string>
+    <string name="video_id">L0WGZSiOZsM</string>
+    <string name="googleApi">AIzaSyAIYGCULP8KdWe5tIZejjSY2FGsjf_0FLs</string>
+</resources>

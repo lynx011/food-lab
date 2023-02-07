@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categoryFragment"
+    android:background="#90EE90"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ProfileFragment"
+    tools:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/pfToolbar"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textIsSelectable="false"
+                android:letterSpacing="0.03"
+                android:layout_gravity="start"
+                tools:ignore="HardcodedText" />
+                <ImageView
+                    android:id="@+id/pfNoti"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/notifications"
+                    android:layout_gravity="end"
+                    tools:ignore="ContentDescription"
+                    app:tint="@color/grey" />
+        </com.google.android.material.appbar.MaterialToolbar>
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:src="@drawable/notifications"-->
+<!--                app:tint="@color/light_green"-->
+<!--                tools:ignore="ContentDescription" />-->
+
+<!--        </LinearLayout>-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardElevation="60dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <ImageView
+                android:background="@drawable/circle_avatar"
+                android:id="@+id/pfImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/pfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rimuru Tempest"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"
+            android:textIsSelectable="false"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/pfUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@tempest01"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"
+            android:textIsSelectable="false"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_gravity="bottom"
+        app:cardElevation="60dp"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessLeaf">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LogOut"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:paddingVertical="6dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                app:icon="@drawable/logout"
+                app:iconTint="@color/white"
+                tools:ignore="HardcodedText" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postId"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postUserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/postBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:text="Post"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
