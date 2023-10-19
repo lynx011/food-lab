@@ -18,10 +18,12 @@ import com.example.food_test.repository.FavMealRepository
 import com.example.food_test.room_database.RandomMealsDatabase
 import com.example.food_test.view_model.FavMealViewModel
 import com.example.food_test.view_model_factory.FavViewModelFactory
+import dagger.hilt.android.AndroidEntryPoint
 
 lateinit var favViewModel: FavMealViewModel
 var isClicked = false
 
+@AndroidEntryPoint
 class RandomMealDetailFragment : Fragment() {
     private lateinit var binding: FragmentRandomMealDetailBinding
     override fun onCreateView(

@@ -13,21 +13,21 @@ abstract class RandomMealsDatabase : RoomDatabase() {
 
     abstract fun getRandomMealDao(): RandomMealDao
 
-    companion object {
-        @Volatile
-        private var instance: RandomMealsDatabase? = null
-
-        @Synchronized
-        fun getInstance(context: Context): RandomMealsDatabase {
-            if (instance == null) {
-                instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    RandomMealsDatabase::class.java,
-                    "meals.DB"
-                )
-                    .build()
-            }
-            return instance as RandomMealsDatabase
-        }
-    }
+//    companion object {
+//        @Volatile
+//        private var instance: RandomMealsDatabase? = null
+//
+//        @Synchronized
+//        fun getInstance(context: Context): RandomMealsDatabase {
+//            if (instance == null) {
+//                instance = Room.databaseBuilder(
+//                    context.applicationContext,
+//                    RandomMealsDatabase::class.java,
+//                    "meals.DB"
+//                )
+//                    .build()
+//            }
+//            return instance as RandomMealsDatabase
+//        }
+//    }
 }

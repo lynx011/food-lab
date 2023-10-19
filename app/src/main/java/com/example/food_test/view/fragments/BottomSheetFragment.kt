@@ -10,7 +10,9 @@ import com.bumptech.glide.Glide
 import com.example.food_test.R
 import com.example.food_test.databinding.FragmentBottomSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 open class BottomSheetFragment : BottomSheetDialogFragment() {
     lateinit var binding: FragmentBottomSheetBinding
     private var mealId: String? = null

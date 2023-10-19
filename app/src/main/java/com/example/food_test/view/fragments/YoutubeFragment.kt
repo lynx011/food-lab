@@ -15,9 +15,10 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils.YouTubePlayerTracker
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.regex.Pattern
 
-
+@AndroidEntryPoint
 class YoutubeFragment : Fragment() {
     lateinit var binding: FragmentYoutubeBinding
     lateinit var utubePlayerView: YouTubePlayerView

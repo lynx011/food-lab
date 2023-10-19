@@ -16,7 +16,9 @@ import com.example.food_test.R
 import com.example.food_test.databinding.ActivityMainBinding
 import com.example.food_test.databinding.FragmentSplashBinding
 import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var splashBinding: FragmentSplashBinding
     lateinit var binding: ActivityMainBinding

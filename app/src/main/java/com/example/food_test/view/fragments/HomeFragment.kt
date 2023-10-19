@@ -25,10 +25,12 @@ import com.example.food_test.view_model.MealViewModel
 import com.example.food_test.view_model_factory.ViewModelFactory
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.auth.FirebaseAuth
+import dagger.hilt.android.AndroidEntryPoint
 
 
 lateinit var mealViewModel: MealViewModel
 
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private lateinit var popularMealAdapter: PopularMealAdapter

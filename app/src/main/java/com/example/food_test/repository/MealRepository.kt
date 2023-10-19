@@ -1,8 +1,9 @@
 package com.example.food_test.repository
 import com.example.food_test.api_service.ApiService
 import com.example.food_test.model.RandomMeals
+import javax.inject.Inject
 
-class MealRepository(private val apiService: ApiService) {
+class MealRepository @Inject constructor(private val apiService: ApiService) {
 
     suspend fun getRandomMeal() = apiService.getRandomMeal()
 

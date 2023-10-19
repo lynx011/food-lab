@@ -24,14 +24,14 @@ interface ApiService {
     @GET("lookup.php")
     suspend fun getMealById(@Query("i") id : String) : Response<RandomMealModel>
 
-    companion object {
-        private const val baseUrl = "https://www.themealdb.com/api/json/v1/1/"
-        fun retrofitInstance() : ApiService{
-            return Retrofit.Builder()
-                    .baseUrl(baseUrl)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build()
-                    .create(ApiService::class.java)
-        }
-    }
+//    companion object {
+//        private const val baseUrl = "https://www.themealdb.com/api/json/v1/1/"
+//        fun retrofitInstance() : ApiService{
+//            return Retrofit.Builder()
+//                    .baseUrl(baseUrl)
+//                    .addConverterFactory(GsonConverterFactory.create())
+//                    .build()
+//                    .create(ApiService::class.java)
+//        }
+//    }
 }

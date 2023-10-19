@@ -2,8 +2,9 @@ package com.example.food_test.repository
 
 import com.example.food_test.model.RandomMeals
 import com.example.food_test.room_database.RandomMealsDatabase
+import javax.inject.Inject
 
-class FavMealRepository(private val db: RandomMealsDatabase) {
+class FavMealRepository @Inject constructor(private val db: RandomMealsDatabase) {
 
     suspend fun insertMeal(meal: RandomMeals) = db.getRandomMealDao().insertMeals(meal)
 

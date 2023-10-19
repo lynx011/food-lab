@@ -32,9 +32,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.*
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.regex.Pattern
 
-
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
     lateinit var binding: FragmentLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth

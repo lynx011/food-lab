@@ -21,7 +21,9 @@ import com.example.food_test.repository.FavMealRepository
 import com.example.food_test.room_database.RandomMealsDatabase
 import com.example.food_test.view_model.FavMealViewModel
 import com.example.food_test.view_model_factory.FavViewModelFactory
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FavouritesFragment : Fragment() {
     private lateinit var binding: FragmentFavouriteBinding
     private lateinit var favMealAdapter: FavMealAdapter
